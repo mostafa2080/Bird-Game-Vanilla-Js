@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  cursor: url(../gameImages/shoot.svg) 64 64, auto;
+}
+body {
+  background-image: url('/gameImages/bg3.png  ');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  color: #000;
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 15px 45px;
+  font-size: 1.1rem;
+  margin-top: 3em;
+  outline: none;
+  cursor: none;
+}
+.beforeStart {
+  position: relative;
+  top: 20%;
+  background-color: #5d767e21;
+}
+
+.bloodSpot {
+  position: absolute;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.welcome {
+  font-size: 3rem;
+  border: 2px solid #fff;
+  width: 520px;
+  margin: auto;
+  position: relative;
+  top: 18%;
+  text-align: center;
+  padding: 45px;
+  background-color: #5d767e17;
+}
+
+.bird {
+  height: 100px;
+}
+
+img::selection {
+  background: transparent;
+}
+
+#winner,
+#loser {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #00000073;
+}
+
+#winner h2,
+#loser h2 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#winner img,
+#loser img {
+  display: block;
+}
+.again {
+  background-color: #d3d3d3;
+  border: 2px solid #808080;
+  border-radius: 5px;
+}
+.scoreWin,
+.scoreLose {
+  margin-top: 40px;
+  font-size: 25px;
+}
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+ul li {
+  float: left;
+  width: 19%;
+  margin: 1% 3%;
+  padding: 0.5em;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #5d767e75;
+  font: 18px/1.5em 'Open Sans', sans-serif;
+  color: seashell;
+}

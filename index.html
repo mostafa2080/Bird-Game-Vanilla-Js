@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Style/style.css" />
+    <title>Birdy Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li><span id="name"></span></li>
+        <li><span id="score">0</span></li>
+        <li>Time Left: <span id="timer"></span></li>
+        <li><span id="killed">0</span></li>
+      </ul>
+      <p class="welcome"></p>
+      <button type="button" class="startBtn beforeStart">START GAME</button>
+      <div id="winner">
+        <p class="scoreWin">Score :</p>
+        <h2>You Are Winner</h2>
+        <img src="./gameImages/winner.gif" class="finish" />
+        <button type="button" class="startBtn beforeStart again">
+          Play again
+        </button>
+      </div>
+      <div id="loser">
+        <p class="scoreLose">Score :</p>
+        <h2>You Are Loser</h2>
+        <img src="./gameImages/loser.gif" class="finish" />
+        <button type="button" class="startBtn beforeStart again">
+          Play again
+        </button>
+      </div>
+    </div>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
